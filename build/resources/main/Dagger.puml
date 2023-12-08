@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class App {
+- dynamoDBMapper: DynamoDBMapper
++ provideCreatePlaylistDao() : CreatePlaylistActivity
++ provideGetPlaylistActivity() : GetPlaylistActivity
++ provideUpdatePlaylistActivity() : UpdatePlaylistActivity
++ provideAddSongToPlaylistActivity() : AddSongToPlaylistActivity
++ provideGetPlaylistSongsActivity() : GetPlaylistSongsActivity
++ providePlaylistDao() : PlaylistDao
++ provideAlbumTrackDao() : AlbumTrackDao
+- provideDynamoDBMapper() : DynamoDBMapper
+}
+
+@enduml

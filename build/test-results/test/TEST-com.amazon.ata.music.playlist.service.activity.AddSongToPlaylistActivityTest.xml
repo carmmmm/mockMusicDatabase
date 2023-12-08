@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.amazon.ata.music.playlist.service.activity.AddSongToPlaylistActivityTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-02-02T17:27:39" hostname="Carmens-MacBook-Pro-2.local" time="1.574">
+  <properties/>
+  <testcase name="handleRequest_noMatchingAlbumTrack_throwsAlbumTrackNotFoundException()" classname="com.amazon.ata.music.playlist.service.activity.AddSongToPlaylistActivityTest" time="1.504"/>
+  <testcase name="handleRequest_validRequest_addsSongToEndOfPlaylist()" classname="com.amazon.ata.music.playlist.service.activity.AddSongToPlaylistActivityTest" time="0.044"/>
+  <testcase name="handleRequest_noMatchingPlaylistId_throwsPlaylistNotFoundException()" classname="com.amazon.ata.music.playlist.service.activity.AddSongToPlaylistActivityTest" time="0.005"/>
+  <testcase name="handleRequest_validRequestWithQueueNextFalse_addsSongToEndOfPlaylist()" classname="com.amazon.ata.music.playlist.service.activity.AddSongToPlaylistActivityTest" time="0.005"/>
+  <testcase name="handleRequest_validRequestWithQueueNextTrue_addsSongToBeginningOfPlaylist()" classname="com.amazon.ata.music.playlist.service.activity.AddSongToPlaylistActivityTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

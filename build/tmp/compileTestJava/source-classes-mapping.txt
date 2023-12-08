@@ -1,0 +1,22 @@
+com/amazon/ata/music/playlist/service/tct/MT3IntrospectionTests.java
+ com.amazon.ata.music.playlist.service.tct.MT3IntrospectionTests
+com/amazon/ata/music/playlist/service/helpers/AlbumTrackTestHelper.java
+ com.amazon.ata.music.playlist.service.helpers.AlbumTrackTestHelper
+com/amazon/ata/music/playlist/service/activity/GetPlaylistSongsActivityTest.java
+ com.amazon.ata.music.playlist.service.activity.GetPlaylistSongsActivityTest
+com/amazon/ata/music/playlist/service/tct/MT1DesignClassDiagramIntrospectionTests.java
+ com.amazon.ata.music.playlist.service.tct.MT1DesignClassDiagramIntrospectionTests
+com/amazon/ata/music/playlist/service/tct/MT2DesignIntrospectionTests.java
+ com.amazon.ata.music.playlist.service.tct.MT2DesignIntrospectionTests
+com/amazon/ata/music/playlist/service/activity/AddSongToPlaylistActivityTest.java
+ com.amazon.ata.music.playlist.service.activity.AddSongToPlaylistActivityTest
+com/amazon/ata/music/playlist/service/activity/GetPlaylistActivityTest.java
+ com.amazon.ata.music.playlist.service.activity.GetPlaylistActivityTest
+com/amazon/ata/music/playlist/service/activity/UpdatePlaylistActivityTest.java
+ com.amazon.ata.music.playlist.service.activity.UpdatePlaylistActivityTest
+com/amazon/ata/music/playlist/service/tct/MT2IntrospectionTests.java
+ com.amazon.ata.music.playlist.service.tct.MT2IntrospectionTests
+com/amazon/ata/music/playlist/service/helpers/PlaylistTestHelper.java
+ com.amazon.ata.music.playlist.service.helpers.PlaylistTestHelper
+com/amazon/ata/music/playlist/service/tct/MT1DesignSequenceDiagramIntrospectionTests.java
+ com.amazon.ata.music.playlist.service.tct.MT1DesignSequenceDiagramIntrospectionTests

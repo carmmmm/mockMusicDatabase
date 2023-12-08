@@ -1,0 +1,80 @@
+@startuml
+
+package Activity_Classes {
+class AddSongToPlaylistActivity {
++ handleRequest(AddSongToPlaylistRequest, Context) : AddSongToPlaylistResult
+}
+class CreatePlaylistActivity {
++ handleRequest(CreatePlaylistRequest, Context) : CreatePlaylistResult
+}
+class GetPlaylistActivity {
++ handleRequest(GetPlaylistRequest, Context) : GetPlaylistResult
+}
+class GetPlaylistSongsActivity {
++ handleRequest(GetPlaylistSongsRequest, Context) : GetPlaylistSongsResult
+}
+class UpdatePlaylistActivity {
++ handleRequest(UpdatePlaylistRequest, Context) : UpdatePlaylistResult
+}
+
+}
+
+package Dao_Classes {
+class AlbumTrackDao {
+- final dynamoDbMapper : DynamoDBMapper
+}
+class PlaylistDao {
+- final dynamoDbMapper : DynamoDBMapper
++ getPlaylist(String) : Playlist
+}
+
+}
+
+
+package Dynamodb_models {
+class AlbumTrack {
+- @DynamoDBHashKey asin : String
+- @DynamoDBRangeKey trackNumber : Integer
+- albumName : String
+- songTitle : String
+}
+class Playlist {
+- @DynamoDBHashKey id : String
+- name : String
+- customerId : String
+- songCount : Integer
+- tags : Set<String>
+- songList : List<AlbumTrack>
++ getId() : String
++ getSongList() : List<AlbumTrack> @DynamoDBTypeConverted @DynamoDBAttribute
+}
+
+}
+
+package Exception_Classes {
+
+class RuntimeException{}
+class AlbumTrackNotFoundException {}
+class InvalidAttributeValueException {}
+class PlaylistNotFoundException {}
+class InvalidAttributeChangeException {}
+
+}
+
+Playlist o-- AlbumTrack
+AddSongToPlaylistActivity --> AlbumTrackDao
+CreatePlaylistActivity --> PlaylistDao
+AddSongToPlaylistActivity --> PlaylistDao
+GetPlaylistActivity --> PlaylistDao
+GetPlaylistSongsActivity --> PlaylistDao
+UpdatePlaylistActivity --> PlaylistDao
+
+RuntimeException <|-- AlbumTrackNotFoundException
+RuntimeException <|-- InvalidAttributeValueException
+RuntimeException <|-- PlaylistNotFoundException
+RuntimeException <|-- InvalidAttributeChangeException
+@enduml
+
+
+
+
